@@ -144,7 +144,7 @@ export function createIcon (node, type, config) {
   const iconNode = makeNode(config.icons[type].nodeType)
   const attrs = config.icons[type].attrs
 
-  for (const k in attrs) {
+  for (let k in attrs) {
     if (attrs.hasOwnProperty(k)) {
       iconNode.setAttribute(k, attrs[k])
     }
